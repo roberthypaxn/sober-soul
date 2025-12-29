@@ -9,12 +9,11 @@
     --primary: #3a86ff;
     --secondary: #1effc3;
     
-    --card-size: 1080px;
+    --card-size: 100%;
 }
  html{
     background-color: var(--background);
     padding: 3rem;
-    padding-left: 4rem;
 }
  body {
     margin: 0;
@@ -23,7 +22,7 @@
     text-rendering: optimizelegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    width: calc(var(--card-size) * 1.586);
+    width: calc(var(--card-size) * 1);
     box-shadow:  0 22px 70px 4px rgba(78, 78, 78, 0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
     border: 15px double #000000;
     background: #ffffff;
@@ -56,6 +55,8 @@
     align-items: center;
     justify-content: space-evenly;
     padding-bottom: 10px;
+    font-size: 1.5rem;
+    background-color: #3a86ff;
 }
 .ul{
     list-style: none;
@@ -83,16 +84,17 @@ h1{
     padding-top:40px;
     padding-bottom: 40px;
     background-color: rgb(208, 255, 239);
+    border-bottom: 5px solid #000000;
 }
 .header-content{
     display: grid;
+    margin: 0 3% 0 3%;
     grid-gap: 5px;
     grid-template-columns: 50% 50%;
     text-align: center;
     justify-items: center;
     align-items: center;
     padding: 20px;
-    border-top: 5px solid #000000;
 }
 .liner{
     border-right: 5px dashed #000000;
@@ -141,6 +143,7 @@ img{
 .all-merch{
     display: flex;
     gap: 10px;
+    width: 85%;
     font-size: 1rem;
     margin: 0 auto;
 }
@@ -168,6 +171,7 @@ img{
     border-top: 5px solid #000000;
     border-bottom: 5px solid #000000;
     display: flex;
+    width: 100%;
     flex-direction: column;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -177,6 +181,7 @@ img{
     display: flex;
     font-size: 1rem;
     margin: 0 auto;
+    width: 100%;
 }
 .in{
     width: 700px;
@@ -208,7 +213,7 @@ img{
 cite{
     padding: 0;
 }
-#ear{
+#ear, #idea, #sight{
     padding:30px;
     margin: 0;
 }
